@@ -1,0 +1,7 @@
+.idea/
+*.iws
+*.iml
+/out/
+/target/
+Thumbs.db
+ehthumbs.db
