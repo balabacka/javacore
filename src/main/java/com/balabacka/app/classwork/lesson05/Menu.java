@@ -5,7 +5,7 @@ import static com.balabacka.app.classwork.lesson05.CircleCompare.*;
 /**
  * Created by pc on 27.01.2017.
  */
-public class Calculators {
+public class Menu {
     public static void main( String[] args ){
         int menu=4;
         do {
