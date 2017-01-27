@@ -1,7 +1,4 @@
 package com.balabacka.app.classwork.lesson05;
-
-import java.util.Scanner;
-
 /**
  * Created by pc on 27.01.2017.
  */
@@ -9,12 +6,7 @@ public class CircleRadius{
 
     public static final double PI= 3.14d;
 
-    public static double scanner(String a){
-        Scanner scanner= new Scanner(System.in);
-        System.out.println("Please enter circle radius"+a);
-        double radius= scanner.nextDouble();
-        return radius;
-    }
+
 
     public static double calculate(double radius){
         double circleArea= PI*radius*radius;
@@ -23,10 +15,10 @@ public class CircleRadius{
 
     public static void calculateBigger(){
 
-        double r1= scanner(" 1");
+        double r1= Scanner.valueScanner("circle radius 1");
         double area1 = calculate(r1);
 
-        double r2= scanner(" 2");
+        double r2= Scanner.valueScanner("circle radius 2");
         double area2 = calculate(r2);
 
         System.out.println("Area 1 is " + area1);

@@ -7,15 +7,44 @@ import java.util.InputMismatchException;
  */
 public class Scanner {
 
-    public static double scanner(String a) {
+    public static double menuScanner() {
 
-        double radius = 0;
+        double value = 0;
+        boolean status=true;
+        do {
+            try {
+
+                System.out.println("Please choose calculator 1-3, 4 to quit");
+                System.out.println("1 - Circle comparator");
+                System.out.println("2 - Triangle checker");
+                System.out.println("3 - Odd/Even checker");
+                System.out.println("4 - Quit");
+
+                java.util.Scanner scanner = new java.util.Scanner(System.in);
+                value = scanner.nextInt();
+                if (value>=1 && value <=4){
+                status = false;
+                }
+                else System.out.println("Wrong input, try again");
+            }
+            catch (InputMismatchException e) {
+                System.out.println("Please enter correct INT value");
+            }
+        }
+        while (status);
+        return value;
+    }
+
+
+    public static double valueScanner(String a) {
+
+        double value = 0;
         boolean status=true;
         do {
             try {
                 java.util.Scanner scanner = new java.util.Scanner(System.in);
-                System.out.println("Please enter circle radius" + a);
-                radius = scanner.nextDouble();
+                System.out.println("Please enter " + a);
+                value = scanner.nextDouble();
                 status = false;
             }
             catch (InputMismatchException e) {
@@ -23,6 +52,6 @@ public class Scanner {
             }
         }
         while (status);
-        return radius;
+        return value;
     }
 }
