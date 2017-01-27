@@ -5,6 +5,22 @@ public class CircleCompare extends Base{
 
     public static final double PI= 3.14d;
 
+    @Override
+    public double scanner() {
+        return 0;
+    }
+
+    @Override
+    public double calculate() {
+
+        return 0;
+    }
+
+    @Override
+    public void print() {
+        
+    }
+
     public static double calculate(double radius){
         double circleArea= PI*radius*radius;
         return circleArea;
@@ -38,19 +54,6 @@ public class CircleCompare extends Base{
         calculateBigger();
     }
 
-    @Override
-    public double scanner() {
-        return 0;
-    }
 
-    @Override
-    public double calculate() {
-        return 0;
-    }
-
-    @Override
-    public String print() {
-        return "";
-    }
 }
 
