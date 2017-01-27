@@ -1,6 +1,6 @@
 package com.balabacka.app.classwork.lesson05;
 
-import static com.balabacka.app.classwork.lesson05.CircleRadius.*;
+import static com.balabacka.app.classwork.lesson05.CircleCompare.*;
 
 /**
  * Created by pc on 27.01.2017.
@@ -9,7 +9,6 @@ public class Calculators {
     public static void main( String[] args ){
         int menu=4;
         do {
-            System.out.println("Test");
             menu = Scanner.menuScanner();
             switch (menu){
                 case 1: calculateBigger();

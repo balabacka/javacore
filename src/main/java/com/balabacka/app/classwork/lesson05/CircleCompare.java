@@ -1,12 +1,9 @@
 package com.balabacka.app.classwork.lesson05;
-/**
- * Created by pc on 27.01.2017.
- */
-public class CircleRadius{
+
+
+public class CircleCompare extends Base{
 
     public static final double PI= 3.14d;
-
-
 
     public static double calculate(double radius){
         double circleArea= PI*radius*radius;
@@ -39,6 +36,21 @@ public class CircleRadius{
     public static void main( String[] args )
     {
         calculateBigger();
+    }
+
+    @Override
+    public double scanner() {
+        return 0;
+    }
+
+    @Override
+    public double calculate() {
+        return 0;
+    }
+
+    @Override
+    public String print() {
+        return "";
     }
 }
 

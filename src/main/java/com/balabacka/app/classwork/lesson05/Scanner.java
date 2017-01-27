@@ -28,7 +28,7 @@ public class Scanner {
                 else System.out.println("Wrong input, try again");
             }
             catch (InputMismatchException e) {
-                System.out.println("Please enter correct INT value");
+                System.out.println("Please enter correct value");
             }
         }
         while (status);
