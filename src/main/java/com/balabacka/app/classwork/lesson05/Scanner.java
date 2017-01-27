@@ -7,9 +7,9 @@ import java.util.InputMismatchException;
  */
 public class Scanner {
 
-    public static double menuScanner() {
+    public static int menuScanner() {
 
-        double value = 0;
+        int value = 0;
         boolean status=true;
         do {
             try {
